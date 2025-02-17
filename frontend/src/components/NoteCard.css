@@ -1,0 +1,44 @@
+.notecard-main {
+    width: 280px;
+    background-color: white;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: start; 
+    gap: 0px;
+  
+  }
+  
+  .notecard-main h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    
+  }
+  
+  .notecard-main p {
+    font-size: 1rem;
+    
+  }
+  
+  .notecard-main .actions-notecard {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8px;
+  }
+  
+  .notecard-main .edit-btn-notecard {
+    color: #3b82f6; /* Blue color */
+    margin-right: 8px;
+  }
+  
+  .notecard-main .delete-btn-notecard {
+    color: #f87171; /* Red color */
+  }
+  

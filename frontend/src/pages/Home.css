@@ -1,0 +1,46 @@
+.home-main-body{
+  width:100vw;
+  
+}
+
+.add-note-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00a680; 
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 24px; 
+  }
+  
+  .add-note-button:hover {
+    background-color: #008d6a; 
+  }
+  
+.notes-container-home {
+  margin-top: 0px;
+  margin-left: -5px;
+  width:100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px;
+  padding: 16px 0px; 
+  justify-items: center; 
+ 
+  
+  
+}
+  /* @media (min-width: 768px) { 
+    .notes-container-home {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  } */
+  

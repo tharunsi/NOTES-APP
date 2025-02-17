@@ -1,0 +1,99 @@
+/* General Navbar Styling */
+.navbar {
+    position: fixed; /* Keep it fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full screen width */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e293b; /* Dark blue background */
+    padding: 10px 20px;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box; /* Ensures padding doesn't cause overflow */
+  }
+  
+  /* Logo */
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    flex-shrink: 0; /* Prevent logo from shrinking */
+  }
+  
+  /* Search Input */
+  .navbar-search {
+    width: 300px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 0.9rem;
+    background-color: #374151; /* Darker grey background */
+    color: #ffffff;
+    flex-shrink: 0; /* Prevent search bar from shrinking */
+  }
+  
+  .navbar-search::placeholder {
+    color: #9ca3af;
+  }
+  
+  /* Buttons Section */
+  .navbar-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-end; /* Align buttons to the right */
+    flex-shrink: 0; /* Prevent button section from shrinking */
+  }
+  
+  /* Username Section */
+  .username {
+    margin-right: 10px;
+    font-size: 0.9rem;
+    color: #ffffff;
+  }
+  
+  /* Buttons Styling */
+  .navbar-button {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  /* Login Button */
+  .login-btn {
+    background-color: #2563eb; /* Blue */
+  }
+  
+  /* Signup Button */
+  .signup-btn {
+    background-color: #22c55e; /* Green */
+  }
+  
+  /* Logout Button */
+  .logout-btn {
+    background-color: #ef4444; /* Red */
+  }
+  
+  /* Hover Effects */
+  .login-btn:hover {
+    background-color: #1d4ed8;
+    color:#ffffff;
+  }
+  
+  .signup-btn:hover {
+    background-color: #16a34a;
+    color: #ffffff;
+  }
+  
+  .logout-btn:hover {
+    background-color: #dc2626;
+  }
+  
