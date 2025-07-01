@@ -10,11 +10,12 @@ const Login = () => {
     const [password,setPassword] = useState('')
     const navigate = useNavigate()
     const {login} = useAuth()
+    const API = import.meta.env.VITE_API_BASE_URL;
 
     const handleSubmit = async (e) => {
         e.preventDefault()
         try{
-            const response = await axios.post('http://localhost:5000/api/auth/login',{email,password})
+            const response = await axios.post(`${API}/api/auth/login`,{email,password})
             console.log(response)
 
             if(response.data.success){

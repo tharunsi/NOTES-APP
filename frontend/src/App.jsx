@@ -4,7 +4,8 @@ import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Login from "./pages/Login"
 import {ToastContainer} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
-import Signup from "./pages/Signup"
+import Signup from "./pages/signup"
+
 
 
 function App() {

@@ -27,9 +27,12 @@ const Home = () => {
     )
   }, [query,notes])
 
+  const API = import.meta.env.VITE_API_BASE_URL;
+
+
   const fetchNotes = async () => {
     try{
-     const {data} = await axios.get("http://localhost:5000/api/note", {
+     const {data} = await axios.get(`${API}/api/note`, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }
@@ -51,7 +54,7 @@ const Home = () => {
 
   const addNote = async (title,description) => {
     try{
-      const response = await axios.post('http://localhost:5000/api/note/add',{title,description}, {
+      const response = await axios.post(`${API}/api/note/add`,{title,description}, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -69,7 +72,7 @@ const Home = () => {
 
   const editNote = async (id, title, description) => {
     try{
-      const response = await axios.put(`http://localhost:5000/api/note/${id}`,{title,description}, {
+      const response = await axios.put(`${API}/api/note/${id}`,{title,description}, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`
         }
@@ -87,7 +90,7 @@ const Home = () => {
 
   const deleteNote = async (id) => {
     try{
-      const response = await axios.delete(`http://localhost:5000/api/note/${id}`, {
+      const response = await axios.delete(`${API}/api/note/${id}`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         }
