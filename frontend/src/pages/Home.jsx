@@ -28,6 +28,8 @@ const Home = () => {
   }, [query,notes])
 
   const API = import.meta.env.VITE_API_BASE_URL;
+  console.log("API BASE URL →", import.meta.env.VITE_API_BASE_URL);
+
 
 
   const fetchNotes = async () => {

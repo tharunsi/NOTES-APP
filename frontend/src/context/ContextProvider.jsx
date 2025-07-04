@@ -16,6 +16,9 @@ const ContextProvider = ({children}) => {
       setNotes([]);
     }
 
+      const API = import.meta.env.VITE_API_BASE_URL;
+      console.log("API from env →", API);
+
     useEffect(() => {
       const verifyUser = async () => {
         console.log("verifyUser function is running...");
@@ -28,7 +31,7 @@ const ContextProvider = ({children}) => {
     //   console.log("No token found, user is not authenticated.");
     //   return;
     // }
-          const res = await axios.get('http://localhost:5000/api/auth/verify',{
+          const res = await axios.get(`${API}/api/auth/verify`,{
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`
             }
